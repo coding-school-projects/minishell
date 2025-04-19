@@ -36,20 +36,6 @@ Key features:
 
 ## 🏁 Getting Started
 
-1. Compile using the Makefile:
-```bash
-make
-
-2. Run the shell:
-```bash
-./minishell
-
-3. Exit the shell:
-```bash
-exit
-
-``bas
-
 ## 🧠 Technical Implementation
 ### Core Architecture
 Lexer: Tokenizes input into commands, arguments, and operators
