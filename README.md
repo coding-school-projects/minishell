@@ -48,8 +48,8 @@ make
 ```bash
 exit
 
-##🧠 Technical Implementation
-###Core Architecture
+## 🧠 Technical Implementation
+### Core Architecture
 Lexer: Tokenizes input into commands, arguments, and operators
 
 Parser: Builds abstract syntax tree (AST) from tokens
