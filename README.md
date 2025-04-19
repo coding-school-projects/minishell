@@ -87,6 +87,13 @@ Signal Handling: Proper response to Ctrl-C/D/\
 
 Bonus: Logical operators and wildcard implementation
 
+## 🧑‍💻 Peer Evaluations (3/3)
+Peer 1: "Great job Ola and Poonkodi! We went thru most of mine tests, and all works perfectly!. Also they showed some part of code and they can explain every little detail in the code. Good job with future projects!"
+
+Peer 2: "I want to commend both girls for the outstanding work on the minishell project. You did a great job creating a stable and functional mini-terminal. Everything works as expected, and the code looks very clean. Well done!"
+
+Peer 3: "In a nutshell, This project is shelling out a lot hard experiences. Big Big thumbs up to Ola and Poonkodi for the long long long effort they combined towards the completion of this project. Of course, there were a little minor issue, but their project didnt crash nor leak memory. It was a roller coaster of a project. Thank you for sharing this with me"
+
 ### 🛠️ Installation & Usage
 
 1. Clone the repository:
