@@ -37,7 +37,7 @@ Key features:
 ## 🏁 Getting Started
 
 1. Compile using the Makefile:
-``bash
+```bash
 make
 
 2. Run the shell:
@@ -47,6 +47,8 @@ make
 3. Exit the shell:
 ```bash
 exit
+
+``bas
 
 ## 🧠 Technical Implementation
 ### Core Architecture
