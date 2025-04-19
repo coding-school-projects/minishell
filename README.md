@@ -1,5 +1,3 @@
-# minishell
-
 <h1 align="center">
 	<img src="https://github.com/lkilpela/42-project-badges/blob/main/badges/minishellm.png" />
 </h1>
@@ -15,10 +13,10 @@
     <img alt="estimated time" src="https://img.shields.io/badge/time%20spent-300%20hours-blue" />
     <img alt="XP earned" src="https://img.shields.io/badge/XP%20earned-2016-orange" />
 <p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/your-username/minishell?color=lightblue" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/your-username/minishell?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/your-username/minishell?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/your-username/minishell?color=green" />
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/senthilpoo10/minishell?color=lightblue" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/senthilpoo10/minishell?color=yellow" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/senthilpoo10/minishell?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/senthilpoo10/minishell?color=green" />
 </p>
 
 ## 📚 About The Project
