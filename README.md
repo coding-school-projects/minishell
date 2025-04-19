@@ -46,53 +46,39 @@ Executor: Handles command execution, redirections, and pipes
 
 Built-ins: Native shell commands implemented directly
 
-##Key Components
-Component	Description
-Prompt	- Customizable prompt displaying current directory
-History	- Command history accessible with arrow keys (using readline)
-Expansion	- Handles VARand? environment variable expansion
-Redirections	- Supports <, >, <<, >> with proper file descriptor management
-Pipes	- Implements	with proper process forking and IPC
-Signals	- Ctrl-C (SIGINT), Ctrl-D (EOF), Ctrl-\ (SIGQUIT) handling
 
-###Built-in Commands
-Command	Options Supported	Description
-echo -	-n	Print arguments with optional newline
-cd - [dir]	Change directory
-pwd	-	Print working directory
-export - [name[=value] ...]	Set environment variables
-unset - [name ...]	Unset environment variables
-env	-	Print environment
-exit- [n]	Exit shell with status n
+### Key Components
+| Component        | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Prompt**       | Customizable prompt showing current directory with ANSI colors              |
+| **History**      | Persistent command history with up/down arrow navigation (using readline)   |
+| **Lexer**        | Tokenizes input into commands, arguments, operators, and redirections       |
+| **Parser**       | Validates syntax and builds execution tree with proper operator precedence  |
+| **Expansion**    | Handles `$VAR` environment variables and `$?` exit status expansion        |
+| **Redirections** | Manages `<` (input), `>` (output), `<<` (heredoc), `>>` (append)           |
+| **Pipes**        | Implements `|` with proper process forking and inter-process communication |
+| **Signals**      | Handles Ctrl-C (SIGINT), Ctrl-D (EOF), Ctrl-\ (SIGQUIT) like bash          |
 
-🚀 Bonus Features
+### Built-in Commands
+| Command   | Options Supported          | Description                                                                 |
+|-----------|----------------------------|-----------------------------------------------------------------------------|
+| `echo`    | `-n`                       | Prints arguments without trailing newline when `-n` specified               |
+| `cd`      | `[dir]` or `~`             | Changes directory with path resolution (`~` for home, `-` for previous)     |
+| `pwd`     | None                       | Prints absolute path of current working directory                          |
+| `export`  | `[name[=value]]`           | Sets environment variables (no args prints all exported vars)               |
+| `unset`   | `[name]`                   | Removes environment variables                                               |
+| `env`     | None                       | Prints all environment variables                                            |
+| `exit`    | `[n]`                      | Exits shell with status `n` (default 0)                                    |
+
+
+## 🚀 Bonus Features
 Logical operators: && and || with command grouping
 
 Wildcards: * expansion for current directory
 
 Parentheses: Priority grouping for command execution
 
-🧪 Testing
-Recommended test cases:
-
-```bash
-# Test basic commands
-echo "Hello $USER" | ./minishell
-
-# Test pipes
-cat /etc/passwd | grep $USER | wc -l
-
-# Test redirections
-echo "test" > file.txt && cat < file.txt
-
-# Test environment variables
-export TEST=value && echo $TEST
-
-# Test signals
-# Press Ctrl-C during sleep command
-sleep 10
-
-📝 Evaluation Criteria
+ ## 📝 Evaluation Criteria
 Correctness: Matches bash behavior for specified features
 
 Memory Management: No leaks (except readline's known leaks)
